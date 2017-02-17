@@ -5,6 +5,13 @@ public class Bus {
 	private String marca;
 	private int capacidad;
 	
+	public Bus(String matricula, String marca, int capacidad){
+		
+		this.matricula = matricula;
+		this.marca = marca;
+		this.capacidad = capacidad;
+		
+	}
 
 	public String getMatricula() {
 		return matricula;
