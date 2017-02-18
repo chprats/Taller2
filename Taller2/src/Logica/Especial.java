@@ -1,3 +1,6 @@
+package Logica;
+
+
 
 public class Especial extends Boleto {
 	
