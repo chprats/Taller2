@@ -5,6 +5,7 @@ public class Boleto {
 	private int edad;
 	private String lugar;
 	private String celular;
+	private String STM;
 	
 public Boleto(int nroBoleto, int edad, String lugar, String celular){
 		
