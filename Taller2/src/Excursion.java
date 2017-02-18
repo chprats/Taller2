@@ -6,6 +6,12 @@ public class Excursion {
 	
 	private String codigo;
 	private String destino;
+	private float precioBase;
+	
+	
+	
+	
+	
 	public String getCodigo() {
 		return codigo;
 	}
@@ -17,6 +23,12 @@ public class Excursion {
 	}
 	public void setDestino(String destino) {
 		this.destino = destino;
+	}
+	public float getPrecioBase() {
+		return precioBase;
+	}
+	public void setPrecioBase(float precioBase) {
+		this.precioBase = precioBase;
 	}
 	
 	
