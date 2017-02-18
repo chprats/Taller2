@@ -6,6 +6,14 @@ public class Boleto {
 	private String lugar;
 	private String celular;
 	
+public Boleto(int nroBoleto, int edad, String lugar, String celular){
+		
+		this.nroBoleto = nroBoleto;
+		this.edad = edad;
+		this.lugar = lugar;
+		this.celular = celular;
+		
+	}
 	
 	public int getNroBoleto() {
 		return nroBoleto;
