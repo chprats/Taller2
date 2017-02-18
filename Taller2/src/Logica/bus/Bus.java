@@ -1,4 +1,4 @@
-package Logica;
+package Logica.bus;
 
 public class Bus {
 	

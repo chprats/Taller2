@@ -1,4 +1,5 @@
-package Logica;
+package Logica.boleto;
+
 
 
 

@@ -1,4 +1,4 @@
-package Logica;
+package Logica.excursion;
 import java.util.Date;
 
 
