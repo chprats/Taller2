@@ -7,6 +7,8 @@ public class Excursion {
 	
 	private String codigo;
 	private String destino;
+	private Date horaSalida;
+	private Date horaEntrada;
 	private float precioBase;
 	
 	
@@ -30,6 +32,18 @@ public class Excursion {
 	}
 	public void setPrecioBase(float precioBase) {
 		this.precioBase = precioBase;
+	}
+	public Date getHoraSalida() {
+		return horaSalida;
+	}
+	public void setHoraSalida(Date horaSalida) {
+		this.horaSalida = horaSalida;
+	}
+	public Date getHoraEntrada() {
+		return horaEntrada;
+	}
+	public void setHoraEntrada(Date horaEntrada) {
+		this.horaEntrada = horaEntrada;
 	}
 	
 	
