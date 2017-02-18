@@ -6,6 +6,7 @@ public class Boleto {
 	private String lugar;
 	private String celular;
 	private String STM22;
+	private String STM2244;
 	
 public Boleto(int nroBoleto, int edad, String lugar, String celular){
 		
