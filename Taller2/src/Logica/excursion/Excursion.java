@@ -12,7 +12,16 @@ public class Excursion {
 	private float precioBase;
 	
 	
-	
+	public Excursion(String codigo, String destino, Date horaSalida, Date horaEntrada, float precioBase){
+		
+		this.codigo = codigo;
+		this.destino = destino;
+		this.horaSalida = horaSalida;
+		this.horaEntrada = horaEntrada;
+		this.precioBase = precioBase;
+		
+			
+	}
 	
 	
 	public String getCodigo() {
