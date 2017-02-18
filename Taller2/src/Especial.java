@@ -8,11 +8,7 @@ public class Especial extends Boleto {
 		this.descuento = descuento;		
 	
 	}
-	
-	
-	
-	
-	
+				
 	
 	
 	public float getDescuento() {
