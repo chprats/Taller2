@@ -1,7 +1,5 @@
-package Logica;
+package Logica.boleto;
 import java.util.*;
-
-import Logica.boleto.Boleto;
 
 
 public class Boletos {

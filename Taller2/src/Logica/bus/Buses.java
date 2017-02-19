@@ -1,8 +1,6 @@
-package Logica;
+package Logica.bus;
 
 import java.util.TreeMap;
-
-import Logica.bus.Bus;
 
 public class Buses {
 	
