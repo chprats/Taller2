@@ -2,14 +2,22 @@ package Logica.valueobjects;
 
 public class VOCodExc {
 
-	public String codigo;
+	private String codigo;
 	
 	public VOCodExc(){
 		
 	}
 	
 	public VOCodExc(String cod){
-		this.codigo = cod;
+		this.setCodigo(cod);
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
 	}
 	
 }

@@ -2,14 +2,22 @@ package Logica.valueobjects;
 
 public class VOMatricula {
 	
-	public String matricula;
+	private String matricula;
 	
 	public VOMatricula(){
 		
 	}
 	
 	public VOMatricula(String mat){
-		this.matricula = mat;
+		this.setMatricula(mat);
+	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 	
 	

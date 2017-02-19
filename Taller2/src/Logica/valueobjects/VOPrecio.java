@@ -2,7 +2,7 @@ package Logica.valueobjects;
 
 public class VOPrecio {
 	
-	public double precio;
+	private double precio;
 	
 	
 	public VOPrecio(){
@@ -10,7 +10,15 @@ public class VOPrecio {
 	}
 	
 	public VOPrecio(double p){
-		this.precio = p;
+		this.setPrecio(p);
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
 	}
 	
 }
