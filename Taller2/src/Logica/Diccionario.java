@@ -1,20 +1,31 @@
 package Logica;
+import Logica.valueobjects.*;
 import java.util.TreeMap;
 
 
 
-public class Diccionario {
+public class Diccionario<String, VOBus> {
 	
-	private TreeMap diccio = new TreeMap();
+	protected TreeMap<String, VOBus> diccio;
 
-	public TreeMap getDiccio() {
-		return diccio;
+	public Diccionario(){
+		diccio = new TreeMap<String, VOBus>();
 	}
-
-	public void setDiccio(TreeMap diccio) {
-		this.diccio = diccio;
-	}
-
 	
+	public boolean member (String clave){ 
+		return diccio.containsKey(clave); 
+	}
+	
+	public VOBus find (String clave){ 
+		return diccio.get(clave); 
+	}
+	
+	public void insert (String clave, VOBus objeto){ 
+		diccio.put(clave,objeto); 
+	}
+	
+	public void delete (String clave){ 
+		diccio.remove(clave);
+	}
 
 }

@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class VOExc {
 	
-	private String matricula;
+	private String codigo;
 	private Date horaSalida;
 	private Date horaRegreso;
 	private String destino;
@@ -13,8 +13,8 @@ public class VOExc {
 		
 	}
 	
-	public VOExc(String mat, Date hs, Date hr, String dest, double p){
-		this.setMatricula(mat);
+	public VOExc(String cod, Date hs, Date hr, String dest, double p){
+		this.setCodigo(cod);
 		this.setHoraSalida(hs);
 		this.setHoraRegreso(hr);
 		this.setDestino(dest);
@@ -22,12 +22,12 @@ public class VOExc {
 		
 	}
 
-	public String getMatricula() {
-		return matricula;
+	public String getCodigo() {
+		return codigo;
 	}
 
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
+	public void setCodigo(String cod) {
+		this.codigo = cod;
 	}
 
 	public Date getHoraSalida() {
