@@ -1,24 +1,21 @@
 package main;
 
 import java.util.Iterator;
+
 import Logica.bus.*;
 import Logica.valueobjects.*;
-import Logica.Fachada;
 
 public class principal {
 	
 //Prueba requerimiento 1	
 	public static void main(String[] args){
 	
-	Fachada f;
-    f = new Fachada();
     Buses pruebas;
     pruebas = new Buses(); 
 	VOBus prueba;
 	
 	prueba = new VOBus("1", "Volvo", 20, 4);
-	f.Registrarbus(prueba);
-	//pruebas.registrarBus(prueba);
+	pruebas.registrarBus(prueba);
 	prueba = new VOBus("4", "ASDasd", 30, 2);
 	pruebas.registrarBus(prueba);
 	prueba = new VOBus("8", "aspdasd", 23, 5);

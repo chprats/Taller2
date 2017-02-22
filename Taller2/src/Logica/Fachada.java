@@ -1,17 +1,16 @@
 package Logica;
 
 import Logica.bus.*;
-import Logica.excursion.*;
 import Logica.valueobjects.*;
-
 
 public class Fachada {
 	
-	private Buses buses;
-    private Excursiones excursiones;
 	
-	private Fachada(){
-		buses = new 
+	private Buses buses;
+    /*private Excursiones excurciones;*/
+	
+	public Fachada(){
+		super();
 	}
 
 	public Buses getBuses() {

@@ -3,7 +3,7 @@ import Logica.excursion.*;
 
 public class Bus {
 	
-	private String matricula;
+	private  String matricula;
 	private String marca;
 	private int capacidad;
 	private Excursiones excursiones;
