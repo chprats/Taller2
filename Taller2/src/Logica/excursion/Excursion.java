@@ -1,9 +1,10 @@
 package Logica.excursion;
+import java.io.Serializable;
 import java.util.Date;
 
 
 
-public class Excursion {
+public class Excursion implements Serializable {
 	
 	private String codigo;
 	private String destino;

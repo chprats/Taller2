@@ -1,5 +1,7 @@
 package Logica.excursion;
 
-public class Excursiones {
+import java.io.Serializable;
+
+public class Excursiones implements Serializable{
 
 }

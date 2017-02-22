@@ -1,7 +1,9 @@
 package Logica.bus;
+import java.io.Serializable;
+
 import Logica.excursion.*;
 
-public class Bus {
+public class Bus implements Serializable {
 	
 	private  String matricula;
 	private String marca;
