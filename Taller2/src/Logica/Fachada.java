@@ -1,16 +1,20 @@
 package Logica;
 
+import java.util.Iterator;
+
 import Logica.bus.*;
+import Logica.excursion.*;
 import Logica.valueobjects.*;
 
 public class Fachada {
 	
 	
 	private Buses buses;
-    /*private Excursiones excurciones;*/
+    private Excursiones excursiones;
 	
 	public Fachada(){
-		super();
+		buses = new Buses();
+		excursiones = new Excursiones();
 	}
 
 	public Buses getBuses() {
@@ -24,6 +28,14 @@ public class Fachada {
 	public void Registrarbus(VOBus b){
 		
 		buses.registrarBus(b);
+		
+	}
+	
+	public Iterator<VOBus> ListarBuses(){
+		
+		Iterator iter;
+		iter = buses.listarbuses();
+		return iter;
 		
 	}
 	

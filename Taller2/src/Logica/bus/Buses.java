@@ -1,7 +1,10 @@
 package Logica.bus;
 
 import java.util.TreeMap;
+
+import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
+
 import java.util.Iterator;
 
 
@@ -10,18 +13,22 @@ public class Buses{
 	/*protected TreeMap<String, VOBus> maTreeBuses;*/
 	/*private TreeMap<String, VOBus> maTreeBuses; */
 
-	protected TreeMap<String, VOBus> buses;
+	protected TreeMap<String, Bus> buses;
 
 	public Buses(){
-		buses = new TreeMap<String, VOBus>();
+		buses = new TreeMap<String, Bus>();
 	}
 	
-	public void insert (VOBus objeto){ 
+	public void insert (Bus objeto){ 
 		buses.put(((VOMatricula) objeto).getMatricula(), objeto); 
 	}
 	
-	public void registrarBus (VOBus b){
+	public void registrarBus (Bus b){
 		
+		String mat, mar;
+		int cap;
+		Excursiones exc = new Excursiones();
+		b(mat,mar,cap, exc);
 		buses.put(((VOMatricula) b).getMatricula(), b);
 		
 	}
