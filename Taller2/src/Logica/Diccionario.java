@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 
 
-public class Diccionario<String, VOBus> {
+public class Diccionario {
 	
 	protected TreeMap<String, VOBus> diccio;
 

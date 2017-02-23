@@ -1,7 +1,6 @@
 package Logica.bus;
 
 import java.util.TreeMap;
-
 import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
 
@@ -20,25 +19,40 @@ public class Buses{
 	}
 	
 	public void insert (Bus objeto){ 
-		buses.put(((VOMatricula) objeto).getMatricula(), objeto); 
+		buses.put(objeto.getMatricula(), objeto); 
 	}
 	
 	public void registrarBus (Bus b){
 		
-		String mat, mar;
-		int cap;
-		Excursiones exc = new Excursiones();
-		b(mat,mar,cap, exc);
-		buses.put(((VOMatricula) b).getMatricula(), b);
+		buses.put(b.getMatricula(), b);
 		
 	}
 	
 	
 	public Iterator<VOBus> listarbuses(){
 		
-		Iterator<VOBus> iter = buses.values().iterator();
-		return iter;
+		Bus busacambiar;
+		TreeMap<String, VOBus> Busesaux = new TreeMap<String, VOBus>();
+		VOBus remplazo;
+		String mat, mar;
+		int cant;
+		Excursiones exc;
+		exc = new Excursiones();
 		
+		Iterator<Bus> iter = buses.values().iterator();
+			while(iter.hasNext()){
+				busacambiar = iter.next();
+				mat = busacambiar.getMatricula();
+				mar = busacambiar.getMarca();
+				cant = busacambiar.getCapacidad();
+				exc = busacambiar.getExcursiones();
+				remplazo = new VOBus(mat, mar, cant, exc);
+				Busesaux.put(((VOMatricula)remplazo).getMatricula(), remplazo);
+			}
+		
+		Iterator<VOBus> iterlisto = Busesaux.values().iterator();
+		
+		return iterlisto;
 		
 	}
 }

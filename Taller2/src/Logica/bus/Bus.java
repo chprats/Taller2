@@ -1,6 +1,5 @@
 package Logica.bus;
 import Logica.excursion.*;
-import Logica.valueobjects.VOBus;
 
 public class Bus {
 	
@@ -50,23 +49,4 @@ public class Bus {
 		this.excursiones = excursiones;
 	}
 	
-	public Excursiones getExcursiones() {
-		return excursiones;
-	}
-
-	public void setExcursiones(Excursiones excursiones) {
-		this.excursiones = excursiones;
-	}
-
-	public Bus VOaO (VOBus b){
-		
-		String mat, mar;
-		int cap;
-		Excursiones exc = new Excursiones();
-		Bus busnuevo;
-		busnuevo = Bus(mat,mar,cap, exc);
-		return busnuevo;
-		
-	}
-
 }

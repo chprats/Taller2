@@ -8,7 +8,6 @@ import Logica.valueobjects.*;
 
 public class Fachada {
 	
-	
 	private Buses buses;
     private Excursiones excursiones;
 	
@@ -27,13 +26,21 @@ public class Fachada {
 	
 	public void Registrarbus(VOBus b){
 		
-		buses.registrarBus(b);
+		String mat, mar;
+		int cap;
+		Excursiones exc = new Excursiones();
+		mat = b.getMatricula();
+		mar = b.getMarca();
+		cap = b.getCapacidad();
+		Bus busnuevo;
+		busnuevo = new Bus(mat,mar,cap, exc);
+		buses.registrarBus(busnuevo);
 		
 	}
 	
 	public Iterator<VOBus> ListarBuses(){
 		
-		Iterator iter;
+		Iterator<VOBus> iter;
 		iter = buses.listarbuses();
 		return iter;
 		
