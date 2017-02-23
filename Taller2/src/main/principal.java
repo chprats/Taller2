@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Iterator;
 
 import Logica.bus.*;
+import Logica.exception.PersistenciaException;
 import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
 import Persistencia.Guardar;
@@ -12,7 +13,7 @@ import Persistencia.Respaldo;
 public class principal {
 	
 //Prueba requerimiento 1	
-	public static void main (String[] args) throws IOException{
+	public static void main (String[] args) throws PersistenciaException{
 	
     Buses pruebas;
     pruebas = new Buses(); 
@@ -45,7 +46,7 @@ public class principal {
 	
 	
 		
-		String ArchivoRespaldo = "ArchivoRespaldo";
+		String ArchivoRespaldo = "ArchivoRespaldo2";
 		Excursiones excu = new Excursiones();
 		Guardar guar = new Guardar(excu,pruebas);
 		Respaldo re = new Respaldo();

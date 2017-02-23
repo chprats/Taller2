@@ -5,7 +5,7 @@ import java.io.Serializable;
 import Logica.bus.Buses;
 import Logica.excursion.Excursiones;
 
-public class Guardar  {
+public class Guardar implements Serializable {
 	
 
 		private Excursiones excuGuar;
@@ -21,6 +21,9 @@ public class Guardar  {
 			this.excuGuar = excuGuar;
 			this.busesGuar = busesGuar;
 		}
+		public Guardar() {
+			
+		}
 		public Excursiones getExcuGuar() {
 			return excuGuar;
 		}
@@ -33,6 +36,8 @@ public class Guardar  {
 		public void setBusesGuar(Buses busesGuar) {
 			this.busesGuar = busesGuar;
 		}
+		
+		
 		
 		
 	

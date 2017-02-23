@@ -41,6 +41,14 @@ public class Bus implements Serializable {
 	public void setCapacidad(int capacidad) {
 		this.capacidad = capacidad;
 	}
+
+	public Excursiones getExcursiones() {
+		return excursiones;
+	}
+
+	public void setExcursiones(Excursiones excursiones) {
+		this.excursiones = excursiones;
+	}
 	
 
 }
