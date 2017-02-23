@@ -12,7 +12,7 @@ import Persistencia.Respaldo;
 public class principal {
 	
 //Prueba requerimiento 1	
-	public static void main(String[] args) throws IOException{
+	public static void main (String[] args) throws IOException{
 	
     Buses pruebas;
     pruebas = new Buses(); 
@@ -45,7 +45,7 @@ public class principal {
 	
 	
 		
-		String ArchivoRespaldo = null;
+		String ArchivoRespaldo = "ArchivoRespaldo";
 		Excursiones excu = new Excursiones();
 		Guardar guar = new Guardar(excu,pruebas);
 		Respaldo re = new Respaldo();

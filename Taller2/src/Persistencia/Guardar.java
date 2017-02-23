@@ -1,9 +1,11 @@
 package Persistencia;
 
+import java.io.Serializable;
+
 import Logica.bus.Buses;
 import Logica.excursion.Excursiones;
 
-public class Guardar {
+public class Guardar  {
 	
 
 		private Excursiones excuGuar;
