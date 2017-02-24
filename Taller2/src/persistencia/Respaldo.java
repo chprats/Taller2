@@ -1,8 +1,7 @@
 package persistencia;
 
 import java.io.*;
-
-import Logica.bus.Buses;
+import persistencia.Guardar;
 import Logica.exception.PersistenciaException;
 
 public class Respaldo {
@@ -25,12 +24,15 @@ public class Respaldo {
 		
 	}
 
-	public Guardar recuerde(String ArchivoRespaldo) throws PersistenciaException{ 
+	public Guardar recuerde(String ArchivoRespaldo) throws PersistenciaException, Throwable{ 
 		try
 		{
 		FileInputStream f = new FileInputStream(ArchivoRespaldo);
 		ObjectInputStream o = new ObjectInputStream(f);
-		Guardar guardar = new Guardar();
+		
+		Guardar guardar = (Guardar) o.readObject();
+		/*guardar = new Guardar();*/
+		
 		/*guardar = o;*/
 		o.close();
 		f.close();
