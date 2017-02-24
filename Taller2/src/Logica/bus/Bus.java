@@ -10,6 +10,14 @@ public class Bus implements Serializable {
 	private int capacidad;
 	private Excursiones excursiones;
 	
+	
+	
+	
+	
+	public Bus() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Bus(String matricula, String marca, int capacidad){
 		
 		this.matricula = matricula;
@@ -17,6 +25,8 @@ public class Bus implements Serializable {
 		this.capacidad = capacidad;
 		
 	}
+
+	
 
 	public String getMatricula() {
 		return matricula;
