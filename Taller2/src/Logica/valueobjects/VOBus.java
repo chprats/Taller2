@@ -1,6 +1,8 @@
 package Logica.valueobjects;
 
-public class VOBus extends VOMatricula{
+import java.io.Serializable;
+
+public class VOBus extends VOMatricula implements Serializable{
 	
 	private String marca;
 	private int capacidad;

@@ -4,18 +4,18 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 
+import Logica.Guardar;
 import Logica.bus.*;
 import Logica.exception.PersistenciaException;
 import Logica.excursion.Excursion;
 import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
-import Persistencia.Guardar;
 import Persistencia.Respaldo;
 
 public class principal {
 	
 //Prueba requerimiento 1	
-	public static void main (String[] args) throws PersistenciaException{
+	public static void main (String[] args) throws Throwable{
 	
     Buses pruebas;
     pruebas = new Buses(); 
@@ -53,7 +53,6 @@ public class principal {
 		String ArchivoRespaldo = "ArchivoRespaldo2";
 
 
-		
 		
 		
 		
