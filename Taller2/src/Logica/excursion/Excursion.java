@@ -11,6 +11,7 @@ public class Excursion implements Serializable {
 	private Date horaSalida;
 	private Date horaEntrada;
 	private float precioBase;
+	private int boletosVendidos;
 	
 	
 	public Excursion(String codigo, String destino, Date horaSalida, Date horaEntrada, float precioBase){
@@ -55,7 +56,12 @@ public class Excursion implements Serializable {
 	public void setHoraEntrada(Date horaEntrada) {
 		this.horaEntrada = horaEntrada;
 	}
-	
+	public int getBoletosVendidos(){
+		return boletosVendidos;
+	}
+	public void setBoletosVendidos(int cantidad){
+		this.boletosVendidos = cantidad;
+	}
 	
 	
 	

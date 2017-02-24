@@ -1,10 +1,12 @@
 package main;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Iterator;
 
 import Logica.bus.*;
 import Logica.exception.PersistenciaException;
+import Logica.excursion.Excursion;
 import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
 import Persistencia.Guardar;
@@ -43,14 +45,14 @@ public class principal {
 			System.out.println(mensaje);
 			System.out.println("*************************************");
 		}
+		
+
 	
 	
 		
 		String ArchivoRespaldo = "ArchivoRespaldo2";
-		Excursiones excu = new Excursiones();
-		Guardar guar = new Guardar(excu,pruebas);
-		Respaldo re = new Respaldo();
-		re.respaldar(ArchivoRespaldo, guar);
+
+
 		
 		
 		

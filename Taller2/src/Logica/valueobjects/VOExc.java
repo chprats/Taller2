@@ -8,6 +8,7 @@ public class VOExc {
 	private Date horaRegreso;
 	private String destino;
 	private double precio;
+	private int boletosVendidos;
 	
 	public VOExc(){
 		
@@ -61,4 +62,11 @@ public class VOExc {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
+	public int getBoletosVendidos(){
+		return boletosVendidos;
+	}
+	public void setBoletosVendidos(int cantidad){
+		this.boletosVendidos = cantidad;
+	}
+	
 }

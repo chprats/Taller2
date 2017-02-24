@@ -1,8 +1,10 @@
 package Logica.bus;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.TreeMap;
 
+import Logica.Diccionario;
 import Logica.valueobjects.*;
 
 import java.util.Iterator;
@@ -29,6 +31,44 @@ public class Buses implements Serializable{
 		
 	}
 	
+	public boolean member(VOBus bus)
+	{
+		return buses.containsKey(bus.getMatricula());
+	}
+	
+	public void reasignarBus(VOBus bus, VOExc exc){
+		
+		if( this.member(bus))
+		{
+			Bus b = new Bus(bus.getMatricula(), bus.getMarca(), bus.getCapacidad());
+			if (b.getExcursiones().member(exc)){
+				b.getExcursiones().quitarExcursion(exc);
+				
+				Collection dic = buses.values();
+				Iterator itr = dic.iterator();
+				
+				while(itr.hasNext()){
+					Bus aux = (Bus)itr.next();
+					int capacidad = aux.getCapacidad();
+					int boletosVendidos = exc.getBoletosVendidos();
+					if(capacidad>boletosVendidos){
+						aux.getExcursiones().insert(exc);
+						dic.remove(aux);
+						dic.add(aux);
+						break;
+						
+					}
+						
+						
+				}
+					
+				
+			
+			}
+					
+			
+		}
+	}
 	
 	public Iterator<VOBus> listarbuses(){
 		
