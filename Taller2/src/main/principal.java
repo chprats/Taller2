@@ -39,7 +39,7 @@ public class principal {
 	String mensaje;
 	
 //Prueba requerimiento 2
-	Iterator<VOBus> iterb = pruebas.listarbuses();
+	Iterator<VOBus> iterb = f.ListarBuses();
 		while(iterb.hasNext()){
 			prueba = iterb.next();
 			Excursiones excaux;
