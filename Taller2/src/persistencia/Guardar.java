@@ -44,7 +44,7 @@ public class Guardar implements Serializable {
 		}
 		
 		
-		public void recuperarDatos() throws PersistenciaException, Throwable{
+	/*	public void recuperarDatos() throws PersistenciaException, Throwable{
 			
 			
 			Respaldo res = Respaldo();				
@@ -54,13 +54,13 @@ public class Guardar implements Serializable {
 			
 			
 			
-		}
+		}  */
 		
 		public void respaldarDatos () throws PersistenciaException{
 			
 			Guardar guar = new Guardar(this.excuGuar,this.busesGuar);
 			Respaldo res = new Respaldo();
-			res.respaldar("ArchivoRespaldo8.dat", guar);
+			res.respaldar("ArchivoRespaldo9.txt", guar);
 		
 			
 		}

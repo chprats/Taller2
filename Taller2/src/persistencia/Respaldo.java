@@ -4,7 +4,9 @@ import java.io.*;
 import persistencia.Guardar;
 import Logica.exception.PersistenciaException;
 
-public class Respaldo {
+public class Respaldo implements Serializable{
+	
+	
 	
 	
 	

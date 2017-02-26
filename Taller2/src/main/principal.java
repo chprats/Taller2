@@ -2,8 +2,8 @@ package main;
 
 import java.io.IOException;
 import java.util.Iterator;
-import Logica.Fachada;
 
+import Logica.Fachada;
 import Logica.bus.*;
 import Logica.exception.PersistenciaException;
 import Logica.excursion.Excursiones;
@@ -24,7 +24,7 @@ public class principal {
 	Excursiones exc;
 	exc = new Excursiones();
 	
-	prueba = new VOBus("1", "Volvo", 20, exc);
+	/*prueba = new VOBus("1", "Volvo", 20, exc);
 	f.Registrarbus(prueba);
 	//pruebas.registrarBus(prueba);
 	prueba = new VOBus("4", "ASDasd", 30, exc);
@@ -34,9 +34,30 @@ public class principal {
 	f.Registrarbus(prueba);
 	//pruebas.registrarBus(prueba);
 	prueba = new VOBus("2", "asdxa2", 21, exc);
-	f.Registrarbus(prueba);
+	f.Registrarbus(prueba);*/
 	//pruebas.registrarBus(prueba);
 	String mensaje;
+	
+	
+	//Probar GUARDAR ARCHIVO
+	/*try {
+		f.guardarDato();
+	} catch (PersistenciaException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}*/
+	
+	
+	//Probar RECUPERAR DESDE ARCHIVO
+	try {
+		f.recuperarDatos();
+	} catch (PersistenciaException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (Throwable e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	
 //Prueba requerimiento 2
 	Iterator<VOBus> iterb = f.ListarBuses();
@@ -57,10 +78,10 @@ public class principal {
 	
 	
 		
-		String ArchivoRespaldo = "ArchivoRespaldo2";
+		/*String ArchivoRespaldo = "ArchivoRespaldo2";
 		Excursiones excu = new Excursiones();
 		Guardar guar = new Guardar(excu,pruebas);
-		Respaldo re = new Respaldo();
+		Respaldo re = new Respaldo();*/
 		//re.respaldar(ArchivoRespaldo, guar);
 		
 		

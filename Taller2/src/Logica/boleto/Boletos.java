@@ -1,8 +1,9 @@
 package Logica.boleto;
+import java.io.Serializable;
 import java.util.*;
 
 
-public class Boletos {
+public class Boletos implements Serializable {
 	
 	private ArrayList<Boleto>  arreLiBoletos = new ArrayList<Boleto>();
 

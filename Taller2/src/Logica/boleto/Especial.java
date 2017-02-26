@@ -1,9 +1,11 @@
 package Logica.boleto;
 
+import java.io.Serializable;
 
 
 
-public class Especial extends Boleto {
+
+public class Especial extends Boleto implements Serializable{
 	
 	private float descuento;
 	

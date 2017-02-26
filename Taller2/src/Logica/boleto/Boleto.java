@@ -1,6 +1,8 @@
 package Logica.boleto;
 
-public class Boleto {
+import java.io.Serializable;
+
+public class Boleto implements Serializable{
 	
 	private int nroBoleto;
 	private int edad;

@@ -1,9 +1,11 @@
 package Logica.excursion;
 
+import java.io.Serializable;
 import java.util.TreeMap;
+
 import Logica.valueobjects.VOExc;
 
-public class Excursiones {
+public class Excursiones implements Serializable{
 	
 	protected TreeMap<String, VOExc> excursiones;
 	

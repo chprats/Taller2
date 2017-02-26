@@ -1,13 +1,15 @@
 package Logica.bus;
 
+import java.io.Serializable;
 import java.util.TreeMap;
+
 import Logica.excursion.Excursiones;
 import Logica.valueobjects.*;
 
 import java.util.Iterator;
 
 
-public class Buses{
+public class Buses implements Serializable{
 	
 	/*protected TreeMap<String, VOBus> maTreeBuses;*/
 	/*private TreeMap<String, VOBus> maTreeBuses; */
